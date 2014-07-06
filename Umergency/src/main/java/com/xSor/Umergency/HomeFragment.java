@@ -17,7 +17,6 @@ import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 public class HomeFragment extends Fragment implements OnRefreshListener {
 
     private PullToRefreshLayout mPullToRefreshLayout;
-    // Testing
 
     // Temporary URL/DIV Settings
     //String RowanUrl = "http://rowan.edu/";
