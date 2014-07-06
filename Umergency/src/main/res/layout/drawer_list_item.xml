@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:padding="15dp"
+    android:background="@drawable/list_selector">
+    <IconTextView
+        android:id="@+id/icon"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="25dp"
+        android:contentDescription="@string/placeholder"
+        android:src="@drawable/ic_drawer"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/placeholder"
+        android:paddingRight="40dp"
+        android:textSize="22sp"/>
+
+    <TextView android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="15sp"
+        android:background="@drawable/counter_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/darkRed"/>
+
+</RelativeLayout>

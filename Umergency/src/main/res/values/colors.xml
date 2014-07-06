@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="ligherEmerald">#00FFC4</color>
+    <color name="LightEmerald">#00E5B0</color>
+    <color name="Emerald">#009B77</color>
+    <color name="DarkEmerald">#007F62</color>
+    <color name="DarkerEmerald">#004031</color>
+    <color name="GoldYellow">#ffcc00</color>
+    <color name="gray">#c3c3c3</color>
+    <color name="darkRed">#8d0000</color>
+</resources>

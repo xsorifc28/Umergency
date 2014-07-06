@@ -1,0 +1,142 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentViewTest"
+    tools:context="com.xSor.RUEmergency.MainActivity$PlaceholderFragment"
+    android:background="@color/gray">-->
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Your content, here we're using a ScrollView -->
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="282dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#40007F62"
+            android:id="@+id/mainBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_status"
+                android:id="@+id/tvSchoolName"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:focusableInTouchMode="false"
+                android:textSize="30sp" />
+
+            <IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_warning"
+                android:id="@+id/tvIcon"
+                android:layout_below="@+id/tvSchoolName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/GoldYellow"
+                android:singleLine="false"
+                android:textIsSelectable="false"
+                android:textSize="30sp"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:textStyle="bold"
+                android:id="@+id/tvStatus"
+                android:layout_below="@+id/tvIcon"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/GoldYellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMessage"
+                android:textColor="@color/white"
+                android:minLines="3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_below="@+id/tvStatus"
+                android:layout_alignLeft="@+id/tvStatus"
+                android:layout_alignStart="@+id/tvStatus"
+                android:textAlignment="center" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvMessage"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <IconButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_facebook"
+                    android:id="@+id/bFacebook"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="40sp" />
+
+                <IconButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_twitter"
+                    android:id="@+id/bTwitter"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="40sp" />
+
+                <IconButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_googlep"
+                    android:id="@+id/bGooglep"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="40sp" />
+
+                <IconButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_share"
+                    android:id="@+id/bShare"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="40sp" />
+            </TableRow>
+
+         </RelativeLayout>
+
+     </ScrollView>
+
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+<!--</RelativeLayout>-->
