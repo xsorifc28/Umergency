@@ -22,6 +22,7 @@ public class NavDrawerListAdapter extends BaseAdapter {
     public NavDrawerListAdapter(Context context, ArrayList<NavDrawerItem> navDrawerItems){
         this.context = context;
         this.navDrawerItems = navDrawerItems;
+        String hello = "hello world";
     }
 
     @Override
